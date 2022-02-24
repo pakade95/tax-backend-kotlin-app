@@ -1,7 +1,7 @@
 package pl.dtrzaskoma.taxbackendkotlinapp.app.services
 
 import org.springframework.stereotype.Service
-import pl.dtrzaskoma.taxbackendkotlinapp.app.models.Location.Location
+import pl.dtrzaskoma.taxbackendkotlinapp.app.models.location.Location
 import pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.Location.LocationRepository
 import java.util.*
 
@@ -13,7 +13,7 @@ class LocationServiceImpl(private val locationRepository: LocationRepository) : 
     }
 
     override fun saveNewLocation(locationToWrite: Location): Optional<Location> {
-        var savedEntity: Location? = null;
+        var savedEntity: Location? = null
         if (!checkIfLocationExists(locationToWrite)) {
             savedEntity = locationRepository.save(locationToWrite);
         }

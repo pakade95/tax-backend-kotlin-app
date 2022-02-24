@@ -3,7 +3,7 @@ package pl.dtrzaskoma.taxbackendkotlinapp.app.controllers.api
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
-import pl.dtrzaskoma.taxbackendkotlinapp.app.models.Location.Location
+import pl.dtrzaskoma.taxbackendkotlinapp.app.models.location.Location
 import pl.dtrzaskoma.taxbackendkotlinapp.app.services.LocationService
 import java.util.*
 

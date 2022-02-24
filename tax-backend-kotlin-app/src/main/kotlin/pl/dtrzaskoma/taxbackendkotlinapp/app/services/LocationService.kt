@@ -1,6 +1,6 @@
 package pl.dtrzaskoma.taxbackendkotlinapp.app.services
 
-import pl.dtrzaskoma.taxbackendkotlinapp.app.models.Location.Location
+import pl.dtrzaskoma.taxbackendkotlinapp.app.models.location.Location
 import java.util.*
 
 interface LocationService {

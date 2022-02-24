@@ -1,6 +1,6 @@
 package pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.Owner
 
-import pl.dtrzaskoma.taxbackendkotlinapp.app.models.Owner.Owner
+import pl.dtrzaskoma.taxbackendkotlinapp.app.models.owner.Owner
 import java.util.*
 
 interface OwnerRepository {
