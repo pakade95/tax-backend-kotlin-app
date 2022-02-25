@@ -15,12 +15,12 @@ data class CounterState(
     var date: LocalDate = LocalDate.now(),
 
     @ManyToOne
-    @JoinColumn(name = "counter_id", nullable = false)
-    var counter: Counter,
+    @JoinColumn(name = "counter_id", nullable = true)
+    var counter: Counter? = null,
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private var id: Long = 0
+    var id: Long = 0
 ) : Audit() {
 
     data class Builder(

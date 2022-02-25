@@ -8,7 +8,9 @@ class OwnerReadModel(
     var lastName: String = "",
     var emailAddress: String = "",
 ) {
-    fun toOwnerReadModel(source: Owner): OwnerReadModel {
-        return OwnerReadModel(source.id, source.firstName, source.lastName, source.emailAddress)
+    companion object {
+        fun toOwnerReadModel(source: Owner): OwnerReadModel {
+            return OwnerReadModel(source.id, source.firstName, source.lastName, source.emailAddress)
+        }
     }
 }
