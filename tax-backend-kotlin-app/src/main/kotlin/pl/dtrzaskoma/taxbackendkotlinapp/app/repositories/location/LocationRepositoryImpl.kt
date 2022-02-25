@@ -1,4 +1,4 @@
-package pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.Location
+package pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.location
 
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository

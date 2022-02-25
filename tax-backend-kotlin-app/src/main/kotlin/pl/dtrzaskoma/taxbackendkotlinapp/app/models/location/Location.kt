@@ -16,7 +16,8 @@ data class Location(
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private var id: Long = 0,
+    var id: Long = 0,
+
 ) : Audit() {
 
     data class Builder(

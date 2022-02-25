@@ -1,4 +1,4 @@
-package pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.Owner
+package pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.owner
 
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository

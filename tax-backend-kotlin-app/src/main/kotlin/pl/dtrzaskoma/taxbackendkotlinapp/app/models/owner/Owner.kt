@@ -11,6 +11,9 @@ import javax.persistence.OneToMany
 
 @Entity
 data class Owner(
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    var id: Long = 0,
 
     var firstName: String = "",
 
@@ -21,21 +24,24 @@ data class Owner(
     @OneToMany(mappedBy = "owner", cascade = [CascadeType.ALL], orphanRemoval = true)
     var counterList: List<Counter>,
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private var id: Long = 0,
-
     ) : Audit() {
     data class Builder(
-        var firstName: String,
-        var lastName: String,
-        var emailAddress: String,
-        var counterList: List<Counter>,
-    ) {
+        var id: Long = 0,
+        var firstName: String = "",
+        var lastName: String = "",
+        var emailAddress: String = "",
+        var counterList: List<Counter> = listOf(),
+    )
+    {
+        fun id(id: Long) = apply { this.id = id }
         fun firstName(firstName: String) = apply { this.firstName = firstName }
         fun lastName(lastName: String) = apply { this.lastName = lastName }
         fun emailAddress(emailAddress: String) = apply { this.emailAddress = emailAddress }
-        fun counterList(counterList: List<Counter>) = apply { this.counterList = counterList }
-        fun build() = Owner(firstName, lastName, emailAddress, counterList)
+        fun counterList(counterList: List<Counter>) = apply { this.counterList =counterList }
+        fun build() = Owner(id, firstName, lastName, emailAddress, counterList)
+    }
+
+    override fun toString(): String {
+        return this.lastName + " " + this.firstName + " " + this.emailAddress
     }
 }

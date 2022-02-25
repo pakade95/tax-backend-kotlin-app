@@ -1,4 +1,4 @@
-package pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.Owner
+package pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.owner
 
 import pl.dtrzaskoma.taxbackendkotlinapp.app.models.owner.Owner
 import java.util.*

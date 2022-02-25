@@ -1,8 +1,8 @@
-package pl.dtrzaskoma.taxbackendkotlinapp.app.services
+package pl.dtrzaskoma.taxbackendkotlinapp.app.services.location
 
 import org.springframework.stereotype.Service
 import pl.dtrzaskoma.taxbackendkotlinapp.app.models.location.Location
-import pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.Location.LocationRepository
+import pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.location.LocationRepository
 import java.util.*
 
 @Service

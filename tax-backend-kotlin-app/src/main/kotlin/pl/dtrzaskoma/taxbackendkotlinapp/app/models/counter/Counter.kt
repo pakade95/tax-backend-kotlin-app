@@ -40,7 +40,6 @@ data class Counter(
         fun location(location: Location) = apply { this.location = location }
         fun owner(owner: Owner) = apply { this.owner = owner }
         fun build() = Counter(counterName, counterState, location, owner);
-
     }
 
 }

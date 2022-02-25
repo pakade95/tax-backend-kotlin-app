@@ -1,4 +1,4 @@
-package pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.Location
+package pl.dtrzaskoma.taxbackendkotlinapp.app.repositories.location
 
 import pl.dtrzaskoma.taxbackendkotlinapp.app.models.location.Location
 import java.util.*
