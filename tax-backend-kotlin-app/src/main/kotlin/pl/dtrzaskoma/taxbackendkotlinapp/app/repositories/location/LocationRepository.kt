@@ -11,5 +11,5 @@ interface LocationRepository {
     fun findByStreetAndTownAndPostalCode(street:String, town:String, postalCode: String): Optional<Location>
     fun findById(id:Long):Optional<Location>
     fun deleteById(id:Long):Unit
-    fun existsById(id:Long):Unit
+    fun existsById(id:Long):Boolean
 }

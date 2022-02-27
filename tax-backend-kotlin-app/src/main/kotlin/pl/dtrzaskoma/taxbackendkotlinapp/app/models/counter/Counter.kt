@@ -7,7 +7,7 @@ import pl.dtrzaskoma.taxbackendkotlinapp.app.models.owner.Owner
 import javax.persistence.*
 
 @Entity
-data class Counter(
+class Counter(
 
     @Column(unique = true)
     var counterName: String = "",

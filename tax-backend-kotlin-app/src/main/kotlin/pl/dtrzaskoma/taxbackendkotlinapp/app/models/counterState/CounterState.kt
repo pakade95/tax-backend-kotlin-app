@@ -7,7 +7,7 @@ import java.time.LocalDate
 import javax.persistence.*
 
 @Entity
-data class CounterState(
+class CounterState(
 
     var state: String = "",
 

@@ -10,7 +10,7 @@ import javax.persistence.Id
 import javax.persistence.OneToMany
 
 @Entity
-data class Owner(
+class Owner(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long = 0,
@@ -31,13 +31,12 @@ data class Owner(
         var lastName: String = "",
         var emailAddress: String = "",
         var counterList: List<Counter> = listOf(),
-    )
-    {
+    ) {
         fun id(id: Long) = apply { this.id = id }
         fun firstName(firstName: String) = apply { this.firstName = firstName }
         fun lastName(lastName: String) = apply { this.lastName = lastName }
         fun emailAddress(emailAddress: String) = apply { this.emailAddress = emailAddress }
-        fun counterList(counterList: List<Counter>) = apply { this.counterList =counterList }
+        fun counterList(counterList: List<Counter>) = apply { this.counterList = counterList }
         fun build() = Owner(id, firstName, lastName, emailAddress, counterList)
     }
 
